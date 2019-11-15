@@ -7,9 +7,7 @@ public class FibonacciNumbers {
         if(n <= 0){
             return 0;
         }
-        if (n == 1) {
-            return n;
-        } else {
+        else {
             for (int i = 0; i < n - 2; i++) {
                 int sum = first + second;
                 first = second;
