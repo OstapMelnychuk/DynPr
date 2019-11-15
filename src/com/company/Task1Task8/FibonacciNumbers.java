@@ -1,20 +1,21 @@
 package com.company.Task1Task8;
 
 public class FibonacciNumbers {
-    public static void fibNumb(int n){
-        if(n == 1){
-            System.out.println("The Fibonacci Number is " + 1 + ".");
+    public static int fibNumb(int n) {
+        int first = 1;
+        int second = 1;
+        if(n <= 0){
+            return 0;
         }
-        else {
-            int first = 1;
-            int second = 1;
-
-            for(int i = 0; i < n - 1; i++){
+        if (n == 1) {
+            return n;
+        } else {
+            for (int i = 0; i < n - 2; i++) {
                 int sum = first + second;
                 first = second;
                 second = sum;
             }
-            System.out.println(second);
         }
+        return second;
     }
 }
