@@ -5,14 +5,11 @@ public class LongestSubsequence {
     private String sequenceOfNumbers[];
     private int masOfNumbersInTheSequence[];
 
-    public LongestSubsequence(String sequence) {
-        this.sequence = sequence;
+    public void findTheLongestSubsequence(String sequence) {
+        int theLongestSubsequences = 0;
+
         sequenceOfNumbers = sequence.split(" ");
         masOfNumbersInTheSequence = new int[sequenceOfNumbers.length];
-    }
-
-    public void findTheLongestSubsequence() {
-        int theLongestSubsequences = 0;
 
         boolean isCorrectlyEntered = countSubsequences();
 

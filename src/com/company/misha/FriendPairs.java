@@ -1,13 +1,8 @@
 package com.company.misha;
 
 public class FriendPairs {
-    private int numberOfFriends;
 
-    public FriendPairs(int numberOfFriends) {
-        this.numberOfFriends = numberOfFriends;
-    }
-
-    public void findNumberOfPair() {
+    public void findNumberOfPair(int numberOfFriends) {
         try {
             int mas[] = new int[numberOfFriends + 1];
 
