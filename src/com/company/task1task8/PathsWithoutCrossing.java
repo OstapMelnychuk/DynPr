@@ -33,6 +33,9 @@ public class PathsWithoutCrossing {
       System.out.println("Invalid");
       return 0;
     }
+    if (n > Integer.MAX_VALUE / 10000) {
+      return 0;
+    }
     return catalanNumber(n / 2);
   }
 
