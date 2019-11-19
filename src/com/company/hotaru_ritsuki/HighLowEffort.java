@@ -26,7 +26,7 @@ public class HighLowEffort {
    * @param y Second number
    * @return maximum among the 2 numbers
    */
-  static int max(int x, int y) {
+  public static int max(int x, int y) {
     return (x > y ? x : y);
   }
 
