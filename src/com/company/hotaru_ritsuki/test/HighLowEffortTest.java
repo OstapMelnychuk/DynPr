@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import com.company.hotaru_ritsuki.HighLowEffort;
 import org.junit.jupiter.api.Test;
 
-
 class HighLowEffortTest {
 
   @Test
@@ -23,7 +22,7 @@ class HighLowEffortTest {
     int y = 0;
     int expected = 0;
     int actual = HighLowEffort.max(x,y);
-    assertEquals(x,y);
+    assertEquals(expected,actual);
   }
 
   @Test
@@ -59,4 +58,14 @@ class HighLowEffortTest {
     assertEquals(expected, actual);
   }
 
+  @Test
+  void maxTasksNLoverThanZero() {
+    int n = -20;
+    int[] low = new int[]{2, 5, 4, 5, 3};
+    int[] high = new int[]{3, 6, 8, 7, 6};
+
+    int expected = 0;
+    int actual = HighLowEffort.maxTasks(high, low, n);
+    assertEquals(expected, actual);
+  }
 }
