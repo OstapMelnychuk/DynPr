@@ -40,7 +40,7 @@ public class HighLowEffort {
    */
   private static int maxTasks(int[] high, int[] low, int n) {
     // An array taskdp that stores the maximum task done
-    if (n == 0) {
+    if (n <= 0) {
       return 0;
     }
     int[] taskdp = new int[n + 1];
