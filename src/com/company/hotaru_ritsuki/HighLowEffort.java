@@ -34,12 +34,15 @@ public class HighLowEffort {
    * Returns maximum amount of task that can be done till day n.
    *
    * @param high Array of the cost of tasks with high effort
-   * @param low Array of the cost of tasks with low effort
-   * @param n Number of days
-   * @return
+   * @param low  Array of the cost of tasks with low effort
+   * @param n    Number of days
+   * @return The maximum value per n days
    */
-  public static int maxTasks(int[] high, int[] low, int n) {
+  private static int maxTasks(int[] high, int[] low, int n) {
     // An array taskdp that stores the maximum task done
+    if (n == 0) {
+      return 0;
+    }
     int[] taskdp = new int[n + 1];
 
     // If n = 0, no solution exists
