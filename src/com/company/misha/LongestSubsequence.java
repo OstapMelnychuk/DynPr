@@ -29,7 +29,9 @@ public class LongestSubsequence {
     sequenceOfNumbers = sequence.split(" ");
     masOfNumbersInTheSequence = new int[sequenceOfNumbers.length];
 
-    boolean isCorrectlyEntered = countSubsequences();
+    boolean isCorrectlyEntered;
+    if (countSubsequences()) isCorrectlyEntered = true;
+    else isCorrectlyEntered = false;
 
     if (isCorrectlyEntered) {
       for (int i = 0; i < masOfNumbersInTheSequence.length; i++) {
