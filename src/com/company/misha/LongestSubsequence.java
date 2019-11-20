@@ -30,8 +30,12 @@ public class LongestSubsequence {
     masOfNumbersInTheSequence = new int[sequenceOfNumbers.length];
 
     boolean isCorrectlyEntered;
-    if (countSubsequences()) isCorrectlyEntered = true;
-    else isCorrectlyEntered = false;
+
+    if (countSubsequences()) {
+      isCorrectlyEntered = true;
+    } else {
+      isCorrectlyEntered = false;
+    }
 
     if (isCorrectlyEntered) {
       for (int i = 0; i < masOfNumbersInTheSequence.length; i++) {

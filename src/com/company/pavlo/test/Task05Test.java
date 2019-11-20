@@ -9,12 +9,12 @@ public class Task05Test {
 
   @Test
   public void countWaysToRepresentntNumber() {
-    Integer mas1[] = {1, 5, 6};
-    Integer mas2[] = {2, 3, 4};
-    Integer mas3[] = {1, 1, 1};
-    Integer mas4[] = {2, 2, 3};
-    Integer mas5[] = {-1, -2, -3};
-    Integer mas6[] = {-1, 2, 3};
+    Integer[] mas1 = {1, 5, 6};
+    Integer[] mas2 = {2, 3, 4};
+    Integer[] mas3 = {1, 1, 1};
+    Integer[] mas4 = {2, 2, 3};
+    Integer[] mas5 = {-1, -2, -3};
+    Integer[] mas6 = {-1, 2, 3};
 
 
     assertEquals(6, Task05.countWaysToRepresentntNumber(7, mas1));
