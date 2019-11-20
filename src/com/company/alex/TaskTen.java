@@ -25,7 +25,7 @@ public class TaskTen {
    * @param seq string which we have to check.
    * @return the biggest palindrome.
    */
-  static int lps(String seq) {
+  public static int lps(String seq) {
     int n = seq.length();
     int i;
     int j;
