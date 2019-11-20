@@ -32,7 +32,7 @@ public class View {
 
     String task;
 
-    while (interactionin.equals("YES")) {
+    while (interactionin.equalsIgnoreCase("Yes")) {
 
       System.out.println("Enter your array");
 
