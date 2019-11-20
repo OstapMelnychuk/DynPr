@@ -25,7 +25,7 @@ public class Task05 {
    * @param arr    This is array with numbers to represent given number
    * @return int number of ways we can form number
    */
-  public static int countWaysToRepresentNumber(Integer number, Integer[] arr) {
+  public static int countWaysToRepresentntNumber(Integer number, Integer[] arr) {
     int[] sequence = new int[number + 1];
     sequence[0] = BASE_CASE;
     for (int i = 1; i <= number; i++) {
