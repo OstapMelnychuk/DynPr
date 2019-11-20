@@ -1,4 +1,4 @@
-package com.company.pavlo.test;
+package com.company.pavlo;
 
 import com.company.pavlo.Task12;
 import org.junit.Test;

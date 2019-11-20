@@ -26,7 +26,7 @@ public class BucketSort {
       bucket[i] = 0;
     }
 
-    for (int i = 0; i < array.length; i++) {
+    for (int i = 0; i < bucket.length; i++) {
       bucket[array[i]]++;
     }
 

@@ -1,4 +1,4 @@
-package pack;
+package com.company.sort;
 /**
  *
  * This class use to sort integer array by insertion sort.

@@ -1,4 +1,4 @@
-package com.company.hotaru_ritsuki.test;
+package com.company.hotaru_ritsuki;
 
 import static org.junit.jupiter.api.Assertions.*;
 

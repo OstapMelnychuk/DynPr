@@ -1,4 +1,4 @@
-package com.company.pavlo.test;
+package com.company.pavlo;
 
 import com.company.pavlo.Task05;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 public class Task05Test {
 
   @Test
-  public void countWaysToRepresentntNumber() {
+  public void countWaysToRepresentNumber() {
     Integer[] mas1 = {1, 5, 6};
     Integer[] mas2 = {2, 3, 4};
     Integer[] mas3 = {1, 1, 1};
