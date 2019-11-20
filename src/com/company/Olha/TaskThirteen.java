@@ -1,5 +1,5 @@
 
-package com.company;
+package com.company.Olha;
 
 /**
  * This class is for Painting Fence Algorithm
