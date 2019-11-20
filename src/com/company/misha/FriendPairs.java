@@ -12,7 +12,7 @@ public class FriendPairs {
    * @return mas[numberOfFriend] count of possible pairs
    */
   public int findNumberOfPair(int numberOfFriends) {
-    if (numberOfFriends <= -1) {
+    if (numberOfFriends > -1) {
       int[] mas = new int[numberOfFriends + 1];
 
       for (int i = 0; i <= numberOfFriends; i++) {
