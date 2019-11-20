@@ -1,0 +1,16 @@
+package com.company.denis;
+
+import com.company.task1task8.PathsWithoutCrossing;
+import org.junit.Assert;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class PathsWithoutCrossingTest {
+
+  @Test
+  public void countWays() {
+    Assert.assertEquals(42, PathsWithoutCrossing.countWays(10));
+    Assert.assertEquals(0, PathsWithoutCrossing.countWays(-1));
+  }
+}
