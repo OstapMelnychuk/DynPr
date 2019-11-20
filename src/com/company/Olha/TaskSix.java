@@ -1,9 +1,9 @@
-package com.company;
+package com.company.Olha;
 
 import java.util.Arrays;
 
 /**
- * This class is for searching ways to write n as sum of two or more positive integers
+ * This class is for searching ways to write n as sum of two or more positive integers.
  *
  * @author Olha
  * @version 1.0
@@ -11,7 +11,7 @@ import java.util.Arrays;
  */
 public class TaskSix {
   /**
-   * This method counts number of ways to write n as sum of two or more positive integers
+   * This method counts number of ways to write n as sum of two or more positive integers.
    *
    * @param n positive integer number
    * @return number of ways to write n as sum of two or more positive integers

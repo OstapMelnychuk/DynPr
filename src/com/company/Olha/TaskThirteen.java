@@ -1,5 +1,5 @@
 
-package com.company;
+package com.company.Olha;
 
 /**
  * This class is for Painting Fence Algorithm
@@ -10,7 +10,6 @@ package com.company;
  */
 
 public class TaskThirteen {
-
   /**
    * Returns count of ways to color n posts using k colors
    *
@@ -20,10 +19,18 @@ public class TaskThirteen {
    * that at most 2 adjacent posts have the same color.
    */
 
-   public static long countWays(int n, int k) {
+  public static long countWays(int n, int k) {
 
     if (n == 0) {
       return 0;
+      /**
+       * Returns count of ways to color n posts using k colors
+       *
+       * @param n number of plots
+       * @param k number of colors
+       * @return number of ways of painting the fence such,
+       * that at most 2 adjacent posts have the same color.
+       */
     }
     if (n == 1) {
       return k;
