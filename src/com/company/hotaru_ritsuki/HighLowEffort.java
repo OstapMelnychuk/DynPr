@@ -26,7 +26,7 @@ public class HighLowEffort {
    * @param y Second number
    * @return maximum among the 2 numbers
    */
-  static int max(int x, int y) {
+  public static int max(int x, int y) {
     return (x > y ? x : y);
   }
 
@@ -38,7 +38,7 @@ public class HighLowEffort {
    * @param n    Number of days
    * @return The maximum value per n days
    */
-  private static int maxTasks(int[] high, int[] low, int n) {
+  public static int maxTasks(int[] high, int[] low, int n) {
     // An array taskdp that stores the maximum task done
     if (n <= 0) {
       return 0;
