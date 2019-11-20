@@ -3,6 +3,9 @@ package com.company.misha;
 /**
  * This class finds out the total number of ways in which friends can remain single
  * or can be paired up.
+ *
+ *  @author Mykhailo Slivinskiy
+ *  @version 1.1
  */
 public class FriendPairs {
   /**
@@ -11,7 +14,7 @@ public class FriendPairs {
    * @param numberOfFriends the size of a string of numbers
    * @return mas[numberOfFriend] count of possible pairs
    */
-  public int findNumberOfPair(int numberOfFriends) {
+  public static int findNumberOfPair(int numberOfFriends) {
     if (numberOfFriends > -1) {
       int[] mas = new int[numberOfFriends + 1];
 
