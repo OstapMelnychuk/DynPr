@@ -49,6 +49,9 @@ public class PathsWithoutCrossing {
    * @since 1.1
    */
   public static int catalanNumber(int n) {
+    if (n <= 1) {
+      return 0;
+    }
     int[] catalan = new int[n + 1];
     catalan[0] = 1;
     catalan[1] = 1;
