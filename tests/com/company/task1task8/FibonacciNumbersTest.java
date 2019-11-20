@@ -1,4 +1,4 @@
-package com.company.denis;
+package com.company.task1task8;
 
 import com.company.task1task8.FibonacciNumbers;
 import org.junit.Assert;
