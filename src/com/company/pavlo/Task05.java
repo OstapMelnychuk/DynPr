@@ -31,6 +31,20 @@ public class Task05 {
       System.out.println("Number should be between 1 and 90000");
       return 0;
     }
+    if (arr.length > 1) {
+      boolean isArrayEquals = false;
+      for (int i = 1; i < arr.length; i++) {
+        if (!arr[0].equals(arr[i])) {
+          isArrayEquals = false;
+          break;
+        } else {
+          isArrayEquals = true;
+        }
+      }
+      if (isArrayEquals) {
+        return 1;
+      }
+    }
     int[] sequence = new int[number + 1];
     sequence[0] = BASE_CASE;
     for (int i = 1; i <= number; i++) {
