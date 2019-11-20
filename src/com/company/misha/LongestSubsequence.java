@@ -1,9 +1,10 @@
 package com.company.misha;
 
-import java.util.Arrays;
-
 /**
  * This class to find how many numbers we have with difference one in the maximum sub sequence.
+ *
+ * @author Mykhailo Slivinskiy
+ * @version 1.1
  */
 public class LongestSubsequence {
   /**
@@ -13,11 +14,11 @@ public class LongestSubsequence {
   /**
    * An array of characters taken from sentences.
    */
-  private String[] sequenceOfNumbers;
+  static private String[] sequenceOfNumbers;
   /**
    * An array of numbers taken from sentences.
    */
-  private int[] masOfNumbersInTheSequence;
+  static private int[] masOfNumbersInTheSequence;
 
   /**
    * This method finds how many numbers we have with different one in the maximum subsequence
@@ -25,7 +26,7 @@ public class LongestSubsequence {
    *
    * @param sequence given subsequence
    */
-  public int findTheLongestSubsequence(String sequence) {
+  public static int findTheLongestSubsequence(String sequence) {
     if (!sequence.equals("") && !sequence.equals(" ")) {
 
       int theLongestSubsequences = 0;
@@ -66,7 +67,7 @@ public class LongestSubsequence {
    *
    * @return false if we have a trouble and true if we found all numbers.
    */
-  private boolean countSubsequences() {
+  static private boolean countSubsequences() {
     int count = 1;
     int numberOfSubSequence = 0;
 
