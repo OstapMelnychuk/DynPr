@@ -4,8 +4,6 @@ import com.company.task1task8.FibonacciNumbers;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class FibonacciNumbersTest {
 
   @Test
