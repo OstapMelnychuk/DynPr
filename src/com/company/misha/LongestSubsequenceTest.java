@@ -13,5 +13,7 @@ public class LongestSubsequenceTest {
     assertEquals(-1, lS.findTheLongestSubsequence("a b d"));
     assertEquals(3, lS.findTheLongestSubsequence("3 4 7 8 9"));
     assertEquals(-1, lS.findTheLongestSubsequence("a 4 7 8 9"));
+    assertEquals(-1, lS.findTheLongestSubsequence(" "));
+    assertEquals(1, lS.findTheLongestSubsequence("1"));
   }
 }

@@ -13,7 +13,7 @@ public class FriendPairsTest {
   public void findNumberOfPair() {
     friendPairs=new FriendPairs();
     assertEquals(4,friendPairs.findNumberOfPair(3));
-//    assertEquals(-1,friendPairs.findNumberOfPair(-1));
+    assertEquals(-1,friendPairs.findNumberOfPair(-1));
     assertEquals(-1,friendPairs.findNumberOfPair(-3));
     assertEquals(0,friendPairs.findNumberOfPair(0));
     assertEquals(1,friendPairs.findNumberOfPair(1));
