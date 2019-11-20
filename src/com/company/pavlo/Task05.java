@@ -1,11 +1,12 @@
 package com.company.pavlo;
 
-import java.util.Arrays;
 
 /**
  * <h1>Repetitions counter.</h1>
  * <p>This class using to count  how many ways we have to represent one number
  * with a given array of numbers</p>
+ * <p>If array contains negative numbers program will get absolute value from number,
+ * if array contains 0 it will be skipped </p>
  *
  * @author Baluh Pavlo
  * @version 1.0
@@ -25,17 +26,23 @@ public class Task05 {
    * @param arr    This is array with numbers to represent given number
    * @return int number of ways we can form number
    */
-  public static int countWaysToRepresentntNumber(Integer number, Integer[] arr) {
+  public static int countWaysToRepresentNumber(Integer number, Integer[] arr) {
+    if (number < 1) {
+      System.out.println("Number should be between 1 and 90000");
+      return 0;
+    }
     int[] sequence = new int[number + 1];
     sequence[0] = BASE_CASE;
     for (int i = 1; i <= number; i++) {
       for (int j = 0; j < arr.length; j++) {
-        if (i >= arr[j]) {
+        if (arr[j] < 0) {
+          arr[j] = Math.abs(arr[j]);
+        }
+        if (i >= arr[j] && arr[j] != 0) {
           sequence[i] += sequence[i - arr[j]];
         }
       }
     }
-    System.out.println(Arrays.toString(sequence));
     return sequence[number];
   }
 }

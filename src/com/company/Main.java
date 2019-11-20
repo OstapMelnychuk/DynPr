@@ -1,11 +1,11 @@
 package com.company;
 
 import com.company.pavlo.Task05;
+import com.company.pavlo.Task12;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Integer[] arr = {15,1,6};
-        System.out.println(Task05.countWays(100, arr));
-    }
+  public static void main(String[] args) {
+    System.out.println(Task12.countWaysToTileTheFloor(2, 1));
+  }
 }

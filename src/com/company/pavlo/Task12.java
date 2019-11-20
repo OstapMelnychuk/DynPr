@@ -24,6 +24,9 @@ public class Task12 {
   public static int countWaysToTileTheFloor(int n, int m) {
     int[] sequence = new int[n + 1];
     sequence[0] = BASE_CASE;
+    if (n <= 1 || m <= 1) {
+      return 0;
+    }
     for (int i = 1; i <= n; i++) {
       if (i > m) {
         sequence[i] = sequence[i - 1] + sequence[i - m];
