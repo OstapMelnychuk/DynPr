@@ -29,6 +29,9 @@ public class PathsWithoutCrossing {
    */
 
   public static int countWays(int n) {
+    if (n % 2 != 0) {
+      return 0;
+    }
     if (n < 1) {
       return 0;
     }
@@ -45,7 +48,7 @@ public class PathsWithoutCrossing {
    * @return the {@param n}-th Catalan Number.
    * @since 1.1
    */
-  private static int catalanNumber(int n) {
+  public static int catalanNumber(int n) {
     int[] catalan = new int[n + 1];
     catalan[0] = 1;
     catalan[1] = 1;
