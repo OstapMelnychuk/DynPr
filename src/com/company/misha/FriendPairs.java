@@ -12,7 +12,7 @@ public class FriendPairs {
    * @return mas[numberOfFriend] count of possible pairs
    */
   public int findNumberOfPair(int numberOfFriends) {
-    try {
+    if (numberOfFriends <= -1) {
       int[] mas = new int[numberOfFriends + 1];
 
       for (int i = 0; i <= numberOfFriends; i++) {
@@ -25,7 +25,7 @@ public class FriendPairs {
 
       return mas[numberOfFriends];
 
-    } catch (NegativeArraySizeException e) {
+    } else {
       System.out.println("The number cannot be negative");
       return -1;
     }
