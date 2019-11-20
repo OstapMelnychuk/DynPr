@@ -8,6 +8,7 @@ public class TaskThreeTest {
 
   @Test
   public void interestingRow() {
+    assertEquals(0,0);
   }
 
 }
