@@ -41,7 +41,7 @@ public class View {
       try {
         mas = Arrays.stream(array.split(" ")).mapToInt(Integer::parseInt).toArray();
 
-        System.out.println("Choose your task (example Task 1)");
+        System.out.println("Choose your type of sort (example \"Insertion sort\")");
 
         task = scanner.nextLine();
 

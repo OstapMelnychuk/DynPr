@@ -1,5 +1,7 @@
 package com.company.sort.factory;
 
+import com.company.sort.CountingSort;
+import com.company.sort.InsertionSort;
 import com.company.sort.Sort;
 
 /**
@@ -16,8 +18,10 @@ public class SortFactory {
   public Sort getSort(String sortType) {
 
     switch (sortType) {
-      case "Task 1":
-        return null;
+      case "Insertion sort":
+        return new InsertionSort();
+      case "Counting sort":
+        return new CountingSort();
       default:
         System.out.println("Not found task");
         return null;
