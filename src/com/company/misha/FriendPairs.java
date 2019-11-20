@@ -5,13 +5,13 @@ package com.company.misha;
  * or can be paired up.
  */
 public class FriendPairs {
-
   /**
    * This method looks for the number of all possible ways to create pairs of numbers.
    *
    * @param numberOfFriends the size of a string of numbers
+   * @return mas[numberOfFriend] count of possible pairs
    */
-  public void findNumberOfPair(int numberOfFriends) {
+  public int findNumberOfPair(int numberOfFriends) {
     try {
       int[] mas = new int[numberOfFriends + 1];
 
@@ -23,10 +23,11 @@ public class FriendPairs {
         }
       }
 
-      System.out.println(mas[numberOfFriends]
-              + " is number of ways in which friends can remain single or can be paired up.");
+      return mas[numberOfFriends];
+
     } catch (NegativeArraySizeException e) {
       System.out.println("The number cannot be negative");
+      return -1;
     }
   }
 

@@ -23,7 +23,7 @@ public class LongestSubsequence {
    *
    * @param sequence given subsequence
    */
-  public void findTheLongestSubsequence(String sequence) {
+  public int findTheLongestSubsequence(String sequence) {
     int theLongestSubsequences = 0;
 
     sequenceOfNumbers = sequence.split(" ");
@@ -40,7 +40,10 @@ public class LongestSubsequence {
         }
       }
 
-      System.out.println("The longest subsequence is " + theLongestSubsequences);
+      return theLongestSubsequences;
+    } else {
+      System.out.println("Data entered incorrectly");
+      return -1;
     }
   }
 
