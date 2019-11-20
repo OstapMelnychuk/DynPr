@@ -3,6 +3,7 @@ package com.company.hotaru_ritsuki.test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.company.hotaru_ritsuki.HighLowEffort;
+import org.junit.Test;
 import org.junit.jupiter.api.Test;
 
 class HighLowEffortTest {

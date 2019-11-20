@@ -8,9 +8,9 @@ package com.company.sort;
  */
 public class CountingSort {
   /**
-   * This method sort our array with count sorting method
+   * This method sort our array with count sorting method.
    *
-   * @param arr not sorted array.
+   * @param arr not sorted array
    * @return sorted array with count sorting method.
    */
   public static int[] countingSort(int[] arr) {
