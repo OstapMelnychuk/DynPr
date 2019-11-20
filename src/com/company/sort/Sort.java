@@ -1,5 +1,6 @@
 package com.company.sort;
 
 public interface Sort {
-   int[] sort(int[] arr);
+
+   int[] sort(int arr[]);
 }
