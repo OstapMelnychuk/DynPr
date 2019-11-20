@@ -40,7 +40,7 @@ public class Menu {
           break;
         default:
           System.out.println("You entered wrong value. Input should be"
-              + " like  \"9\"  or another int value");
+              + " like  \"9\"  or another int value lower than 4");
           break;
       }
     }
@@ -153,20 +153,25 @@ public class Menu {
           break;
         default:
           System.out.println("You entered wrong value. Input should be"
-              + " like \"9\"  or another int value");
+              + " like \"9\"  or another int value lover than 15");
       }
       scan = new Scanner(System.in);
-      System.out.println("Do you want to continue Yes / No");
-      String answer = scan.nextLine().toLowerCase();
-      switch (answer) {
-        case "yes":
-          break;
-        case "no":
-          cycle = false;
-          break;
-        default:
-          System.out.println("The input should be \"Yes\" or \"No\"");
-          break;
+      boolean cycleTwo = true;
+      while (cycleTwo) {
+        System.out.println("Do you want to continue Yes / No");
+        String answer = scan.nextLine().toLowerCase();
+        switch (answer) {
+          case "yes":
+            cycleTwo = false;
+            break;
+          case "no":
+            cycle = false;
+            cycleTwo = false;
+            break;
+          default:
+            System.out.println("The input should be \"Yes\" or \"No\"");
+            break;
+        }
       }
     }
   }
