@@ -3,7 +3,7 @@ package com.company.sort;
 import java.util.Arrays;
 
 /**
- * This class is for Bucket Sort
+ * This class is for Bucket Sort.
  *
  * @author Olha
  * @version 1.0
@@ -13,7 +13,7 @@ import java.util.Arrays;
 public class BucketSort {
 
   /**
-   * This method realises Bucket Sort
+   * This method realises Bucket Sort.
    *
    * @param array  this is an array which will besorted
    * @param maxVal maximum value (integer number)
