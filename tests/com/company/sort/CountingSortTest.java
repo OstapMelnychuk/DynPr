@@ -12,14 +12,14 @@ public class CountingSortTest {
     CS = new CountingSort();
     int[] arr = {};
     int[] expected = {};
-    int[] actual = CountingSort.countingSort(arr);
+    int[] actual = CS.sort(arr);
     for (int i = 0; i < expected.length; i++) {
       assertEquals(arr[i], actual[i]);
     }
 
     arr =new int[] {2,1};
     expected = new int[]{1, 2};
-    actual = CountingSort.countingSort(arr);
+    actual = CS.sort(arr);
     for (int i = 0; i < expected.length; i++) {
       assertEquals(arr[i], actual[i]);
     }
