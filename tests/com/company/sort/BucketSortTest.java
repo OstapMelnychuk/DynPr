@@ -9,10 +9,10 @@ import java.util.Random;
 import static org.junit.Assert.*;
 
 public class BucketSortTest extends Assert {
-  private static ArrayList<int[]> arrTest=new ArrayList<int[]>();
+  private static ArrayList<int[]> arrTest=new ArrayList<>();
 
-  @BeforeClass
-  public static void setUpBucketSort() {
+  @Before
+  public void setUpBucketSort() {
     java.util.Random rand = new java.util.Random();
     for(int i = 0; i < 10; i++){
       int[] temp=new int[15-i];
@@ -22,12 +22,12 @@ public class BucketSortTest extends Assert {
 
       arrTest.add(temp);
     }
-    arrTest.add(new int[]{});
+    //arrTest.add(new int[]{});
 
   }
 
-  @AfterClass
-  public static void tearDownBucketSort() {
+  @After
+  public void tearDownBucketSort() {
     arrTest.clear();
   }
 
@@ -43,7 +43,7 @@ public class BucketSortTest extends Assert {
       assertArrayEquals(i,temp);
     }
   }
-  public int max(int[] input){
+  private int max(int[] input){
     if(input.length==0){
       return Integer.MIN_VALUE;
     }
