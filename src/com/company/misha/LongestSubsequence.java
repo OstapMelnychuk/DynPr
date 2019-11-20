@@ -1,5 +1,7 @@
 package com.company.misha;
 
+import java.util.Arrays;
+
 /**
  * This class to find how many numbers we have with difference one in the maximum sub sequence.
  */
@@ -24,29 +26,37 @@ public class LongestSubsequence {
    * @param sequence given subsequence
    */
   public int findTheLongestSubsequence(String sequence) {
-    int theLongestSubsequences = 0;
+    if (!sequence.equals("") && !sequence.equals(" ")) {
 
-    sequenceOfNumbers = sequence.split(" ");
-    masOfNumbersInTheSequence = new int[sequenceOfNumbers.length];
+      int theLongestSubsequences = 0;
 
-    boolean isCorrectlyEntered;
+      sequence = sequence.trim();
 
-    if (countSubsequences()) {
-      isCorrectlyEntered = true;
-    } else {
-      isCorrectlyEntered = false;
-    }
+      sequenceOfNumbers = sequence.split(" ");
 
-    if (isCorrectlyEntered) {
-      for (int i = 0; i < masOfNumbersInTheSequence.length; i++) {
-        if (theLongestSubsequences < masOfNumbersInTheSequence[i]) {
-          theLongestSubsequences = masOfNumbersInTheSequence[i];
+
+      masOfNumbersInTheSequence = new int[sequenceOfNumbers.length];
+
+      boolean isCorrectlyEntered = countSubsequences();
+
+      if (isCorrectlyEntered) {
+        for (int i = 0; i < masOfNumbersInTheSequence.length; i++) {
+          if (theLongestSubsequences < masOfNumbersInTheSequence[i]) {
+            theLongestSubsequences = masOfNumbersInTheSequence[i];
+          }
         }
-      }
 
-      return theLongestSubsequences;
+        return theLongestSubsequences;
+
+      } else {
+
+        System.out.println("Data entered incorrectly");
+
+        return -1;
+      }
     } else {
-      System.out.println("Data entered incorrectly");
+      System.out.println("Not found");
+
       return -1;
     }
   }

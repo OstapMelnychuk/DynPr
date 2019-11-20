@@ -42,7 +42,7 @@ public class ModifiedFibonacci {
     if (fibnumbers.containsKey(position)) {
       return fibnumbers.get(position);
     }
-    for (int i = 4; i <= position; i++) {
+    for (int i = fibnumbers.size()+1; i <= position; i++) {
       fibnumbers.put(i, fibnumbers.get(i - 1) + fibnumbers.get(i - 3));
     }
     return fibnumbers.get(position);
@@ -54,7 +54,12 @@ public class ModifiedFibonacci {
    * @param args Command-line args
    */
   public static void main(String[] args) {
-    System.out.println(getFibonacciNumberBottomUpWithCache(3));
-    System.out.println(getFibonacciNumberBottomUpWithCache(5));
+    System.out.println(getFibonacciNumberBottomUpWithCache(58));
+    System.out.println(getFibonacciNumberBottomUpWithCache(59));
+    System.out.println(getFibonacciNumberBottomUpWithCache(58));
+    System.out.println(getFibonacciNumberBottomUpWithCache(57));
+    System.out.println(getFibonacciNumberBottomUpWithCache(15));
+
+
   }
 }
