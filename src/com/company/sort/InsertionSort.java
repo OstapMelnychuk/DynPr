@@ -1,4 +1,4 @@
-package pack;
+package com.company.sort;
 /**
  *
  * This class use to sort integer array by insertion sort.
@@ -8,7 +8,7 @@ package pack;
  * @since       2019-11-18
  */
 
-public class InsertionSort {
+public class InsertionSort  implements Sort{
 
   /**
    * Sorting array.
@@ -16,7 +16,8 @@ public class InsertionSort {
    * @return sorted array.
    */
 
-  public static int[] sort(int arr[]) {
+  @Override
+  public int[] sort(int arr[]) {
     if (arr.length > 0) {
       int n = arr.length;
       for (int i = 1; i < n; ++i) {

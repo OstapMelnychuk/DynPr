@@ -20,7 +20,7 @@ public class TaskThirteen {
      * that at most 2 adjacent posts have the same color.
      */
 
-    static long countWays(int n, int k) {
+ public static long countWays(int n, int k) {
 
         if (n == 0) {
             return 0;

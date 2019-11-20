@@ -6,15 +6,15 @@ package com.company.sort;
  * @author Denis Nechyporuk
  * @version 1.1
  */
-public class CountingSort {
+public class CountingSort implements Sort{
   /**
-   * This method sort our array with count sorting method
+   * This method sort our array with count sorting method.
    *
-   * @param arr not sorted array.
+   * @param arr not sorted array
    * @return sorted array with count sorting method.
    */
-  public static int[] countingSort(int[] arr) {
-
+  @Override
+  public int[] sort(int[] arr) {
     int max;
     int min;
     int[] countArr;

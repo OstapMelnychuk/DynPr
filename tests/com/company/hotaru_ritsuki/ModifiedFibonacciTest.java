@@ -1,4 +1,4 @@
-package com.company.hotaru_ritsuki.test;
+package com.company.hotaru_ritsuki;
 
 import com.company.hotaru_ritsuki.ModifiedFibonacci;
 import org.junit.jupiter.api.Test;

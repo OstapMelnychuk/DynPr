@@ -1,10 +1,8 @@
-package com.company.denis;
+package com.company.task1task8;
 
 import com.company.task1task8.FibonacciNumbers;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class FibonacciNumbersTest {
 
