@@ -33,7 +33,6 @@ public class View {
     String task;
 
     while (interactionin.equalsIgnoreCase("Yes")) {
-
       System.out.println("Enter your array");
 
       String array = scanner.nextLine();
