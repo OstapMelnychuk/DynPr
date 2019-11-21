@@ -1,4 +1,4 @@
-package com.company.Olha.Tests;
+package com.company.olha;
 import com.company.Olha.TaskSix;
 import org.junit.Test;
 
