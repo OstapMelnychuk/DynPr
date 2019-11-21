@@ -30,7 +30,7 @@ public class SortFactory {
         return new BucketSort();
 
       default:
-        System.out.println("Not found task");
+        System.out.println("Not found type of sort");
         return null;
     }
 

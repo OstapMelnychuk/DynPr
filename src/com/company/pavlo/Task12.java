@@ -22,6 +22,10 @@ public class Task12 {
    * @return int The number of ways to tile the given floor using 1 x m tiles
    */
   public static int countWaysToTileTheFloor(int n, int m) {
+    if (n < 2 || m < 2) {
+      System.out.println("both positive integers and > 0");
+      return 0;
+    }
     int[] sequence = new int[n + 1];
     sequence[0] = BASE_CASE;
     for (int i = 1; i <= n; i++) {
