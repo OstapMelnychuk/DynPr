@@ -1,3 +1,13 @@
+/*
+ *  Ostap Melnychuk
+ *
+ * Copyright (c) 1993-2019 SoftServe, Inc. All Rights Reserved
+ * This software is the confidential and proprietary information of SoftServe Inc.
+ * You shall not disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with SoftServe.
+ */
+
 package com.company.menu;
 
 import com.company.Denis.Task14;
@@ -15,12 +25,21 @@ import com.company.pavlo.Task12;
 import com.company.sort.view.View;
 import com.company.task1task8.FibonacciNumbers;
 import com.company.task1task8.PathsWithoutCrossing;
-
-
 import java.util.Scanner;
+
+/**
+ * The class is for displaying Menu and read user input.
+ *
+ * @author Ostap Melnychuk
+ * @version 1.1 20 Nov 2019
+ */
 
 public class Menu {
 
+  /**
+   * The constructor greet User and launches menu method which displays menu.
+   * @since 1.1
+   */
   public Menu() {
     Scanner scanner = new Scanner(System.in);
     boolean cycle = true;
@@ -47,7 +66,10 @@ public class Menu {
     }
   }
 
-
+  /**
+   * Method displays menu and reads User choices and executes tasks.
+   * @since 1.1
+   */
   private void menu() {
     Scanner scan = new Scanner(System.in);
     int result = 0;
@@ -177,7 +199,10 @@ public class Menu {
     }
   }
 
-
+  /**
+   * Method print all the tasks.
+   * @since 1.1
+   */
   private void printTasks() {
     System.out.println("List of Tasks:");
     System.out.println("1. Fibonacci Numbers");
@@ -198,6 +223,12 @@ public class Menu {
     System.out.println("Choose number of Task");
   }
 
+  /**
+   * Method that converts string which contains array to int array.
+   * @param arr is a string which contains array
+   * @return int array from that string
+   * @since 1.1
+   */
   private int[] arrayInput(String arr) {
     String[] strArr = arr.split(" ");
     int[] actualArr = new int[strArr.length];
@@ -207,6 +238,12 @@ public class Menu {
     return actualArr;
   }
 
+  /**
+   * Method that converts int array to Integer objects array.
+   * @param arr is an int array
+   * @return Integer array from int array
+   * @since 1.1
+   */
   private Integer[] convertIntArrToIntegerArr(int[] arr) {
     Integer[] out = new Integer[arr.length];
     for (int i = 0; i < arr.length; i++) {
