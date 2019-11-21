@@ -5,9 +5,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-class ModifiedFibonacciTest {
+public class ModifiedFibonacciTest {
   @Test
-  void getFibonacciNumberBottomUpWithCache() {
+  public void getFibonacciNumberBottomUpWithCache() {
     int n = 6;
     int actual = ModifiedFibonacci.getFibonacciNumberBottomUpWithCache(n);
     int expected = 4;
@@ -41,16 +41,4 @@ class ModifiedFibonacciTest {
     int expected = 1;
     assertEquals(expected, actual);
   }
-
-//  @Test
-//  void getFibonacciNumberBottomUpWithCacheNLowerThanZero() {
-//    try {
-//      int n = -20;
-//      int actual = ModifiedFibonacci.getFibonacciNumberBottomUpWithCache(n);
-//      int expected = 0;
-//      assertEquals(expected, actual);
-//    } catch (NullPointerException e) {
-//      System.out.println("NullPointerException Catched");
-//    }
-//  }
 }
