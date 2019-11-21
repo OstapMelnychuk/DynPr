@@ -1,6 +1,5 @@
 package com.company.sort;
 
-import java.util.Arrays;
 /**
  * Quick-sort for array of integers.
  *
@@ -8,7 +7,7 @@ import java.util.Arrays;
  * @version 1.3 18 Nov 2019
  */
 
-class QuickSort {
+public class QuickSort implements Sort{
   /**
    * This function takes last element as pivot,
    * places the pivot element at its correct
@@ -69,9 +68,11 @@ class QuickSort {
    *
    * @param arr Array to be sorted
    */
-  static void sort(int []arr){
+  @Override
+  public int[] sort(int[] arr) {
     int low = 0;
     int high = arr.length - 1;
     sort(arr, low, high);
+    return arr;
   }
 }

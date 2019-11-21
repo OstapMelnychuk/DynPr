@@ -1,5 +1,6 @@
 package com.company.sort.view;
 
+import com.company.sort.BucketSort;
 import com.company.sort.Sort;
 import com.company.sort.factory.SortFactory;
 
@@ -47,7 +48,10 @@ public class View {
 
         Sort sort = sortFactory.getSort(task);
 
-        System.out.println(Arrays.toString(sort.sort(mas)));
+        try {
+            System.out.println(Arrays.toString(sort.sort(mas)));
+        } catch (NullPointerException e) {
+        }
       } catch (NumberFormatException e) {
         System.out.println("Incorrect data");
       }
@@ -57,5 +61,7 @@ public class View {
       interactionin = scanner.nextLine();
 
     }
+
+    interactionin = "YES";
   }
 }

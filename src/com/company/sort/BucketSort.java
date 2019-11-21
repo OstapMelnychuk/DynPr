@@ -1,7 +1,5 @@
 package com.company.sort;
 
-import java.util.Arrays;
-
 /**
  * This class is for Bucket Sort.
  *
