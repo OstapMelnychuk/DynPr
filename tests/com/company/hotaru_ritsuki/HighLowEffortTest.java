@@ -68,9 +68,8 @@ public class HighLowEffortTest {
     int actual = HighLowEffort.maxTasks(high, low, n);
     assertEquals(expected, actual);
   }
-<<<<<<< HEAD
+
 
 }
-=======
-}
->>>>>>> c5a507341998aa4ccc3cc9bf38bffaa6b0e04972
+
+
