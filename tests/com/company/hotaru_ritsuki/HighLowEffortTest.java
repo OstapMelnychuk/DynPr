@@ -1,8 +1,7 @@
 package com.company.hotaru_ritsuki;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
 
-import com.company.hotaru_ritsuki.HighLowEffort;
 import org.junit.Test;
 
 class HighLowEffortTest {

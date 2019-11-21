@@ -1,4 +1,4 @@
-package com.company.sort.View;
+package com.company.sort.view;
 
 import com.company.sort.Sort;
 import com.company.sort.factory.SortFactory;
@@ -6,10 +6,25 @@ import com.company.sort.factory.SortFactory;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * This class shows a menu for sorting classes.
+ *
+ * @author Mykhailo Slivinskiy
+ * @version 1.1
+ */
 public class View {
+  /**
+   * The array saves the numbers to be sorted.
+   */
   private static int[] mas;
+  /**
+   * Variable for exit the program.
+   */
   private static String interactionin = "YES";
 
+  /**
+   * The method implements the menu logic.
+   */
   public static void start() {
     SortFactory sortFactory = new SortFactory();
 
@@ -17,7 +32,7 @@ public class View {
 
     String task;
 
-    while(interactionin.equals("YES")) {
+    while (interactionin.equalsIgnoreCase("Yes")) {
 
       System.out.println("Enter your array");
 
@@ -26,8 +41,7 @@ public class View {
       try {
         mas = Arrays.stream(array.split(" ")).mapToInt(Integer::parseInt).toArray();
 
-
-        System.out.println("Choose your task (example Task 1)");
+        System.out.println("Choose your type of sort (example \"Insertion sort\")");
 
         task = scanner.nextLine();
 

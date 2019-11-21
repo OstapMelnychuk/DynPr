@@ -4,12 +4,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CountingSortTest {
-  private CountingSort CS;
+public class MergeSortTest {
+  MergeSort CS;
 
   @Test
-  public void countingSort() {
-    CS = new CountingSort();
+  public void sort() {
+    CS=new MergeSort();
     int[] arr = {};
     int[] expected = {};
     int[] actual = CS.sort(arr);
@@ -23,6 +23,5 @@ public class CountingSortTest {
     for (int i = 0; i < expected.length; i++) {
       assertEquals(arr[i], actual[i]);
     }
-
   }
 }
