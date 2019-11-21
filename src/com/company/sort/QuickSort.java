@@ -74,12 +74,4 @@ class QuickSort {
     int high = arr.length - 1;
     sort(arr, low, high);
   }
-
-
-  /**
-   * Driver Program.
-   *
-   * @param args Command-line arguments
-   */
-
 }
