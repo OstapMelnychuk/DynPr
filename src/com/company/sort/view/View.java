@@ -32,12 +32,11 @@ public class View {
     String task;
 
     while (interactionin.equalsIgnoreCase("Yes")) {
-<<<<<<< HEAD
+
       System.out.println("Enter your array");
-=======
 
       System.out.println("Enter your array (example \"1 2 3 4 5\")");
->>>>>>> a319607dfd9d390b5b543c2e0870daf95110eea0
+
 
       String array = scanner.nextLine();
 
