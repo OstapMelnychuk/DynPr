@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MergeSort {
   private static int[] arrToSort;
 
-  public static int[] sort(int[] arr) {
+  public int[] sort(int[] arr) {
     arrToSort = arr;
     int[] workSpace = new int[arr.length];
     reqMergeSort(workSpace, 0, arr.length - 1);
