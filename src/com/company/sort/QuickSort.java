@@ -81,11 +81,5 @@ class QuickSort {
    *
    * @param args Command-line arguments
    */
-  public static void main(String []args) {
-    int[] x = {};
-    System.out.println("Було");
-    System.out.println(Arrays.toString(x));
-    sort(x);
-    System.out.println(Arrays.toString(x));
-  }
+
 }
