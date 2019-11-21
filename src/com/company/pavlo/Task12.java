@@ -22,7 +22,7 @@ public class Task12 {
    * @return int The number of ways to tile the given floor using 1 x m tiles
    */
   public static int countWaysToTileTheFloor(int n, int m) {
-    if (n == 0 || m == 0) {
+    if (n < 2 || m < 2) {
       System.out.println("both positive integers and > 0");
       return 0;
     }

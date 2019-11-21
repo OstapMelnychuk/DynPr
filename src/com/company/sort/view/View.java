@@ -1,5 +1,6 @@
 package com.company.sort.view;
 
+import com.company.sort.BucketSort;
 import com.company.sort.Sort;
 import com.company.sort.factory.SortFactory;
 
@@ -17,15 +18,13 @@ public class View {
    * The array saves the numbers to be sorted.
    */
   private static int[] mas;
-  /**
-   * Variable for exit the program.
-   */
-  private static String interactionin = "YES";
 
   /**
    * The method implements the menu logic.
    */
   public static void start() {
+    String interactionin = "YES";
+
     SortFactory sortFactory = new SortFactory();
 
     Scanner scanner = new Scanner(System.in);
@@ -33,7 +32,12 @@ public class View {
     String task;
 
     while (interactionin.equalsIgnoreCase("Yes")) {
+<<<<<<< HEAD
       System.out.println("Enter your array");
+=======
+
+      System.out.println("Enter your array (example \"1 2 3 4 5\")");
+>>>>>>> a319607dfd9d390b5b543c2e0870daf95110eea0
 
       String array = scanner.nextLine();
 
@@ -46,12 +50,15 @@ public class View {
 
         Sort sort = sortFactory.getSort(task);
 
-        System.out.println(Arrays.toString(sort.sort(mas)));
+        try {
+          System.out.println(Arrays.toString(sort.sort(mas)));
+        } catch (NullPointerException e) {
+        }
       } catch (NumberFormatException e) {
         System.out.println("Incorrect data");
       }
 
-      System.out.println("if you want to try to write YES, if you don't so write something else");
+      System.out.println("\nif you want to try again - write YES, if you don't, so write something else");
 
       interactionin = scanner.nextLine();
 

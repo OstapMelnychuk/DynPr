@@ -21,10 +21,14 @@ public class MergeSort implements Sort {
    * @return sorted array.
    */
   public int[] sort(int[] arr) {
+    if (arr.length>1){
     arrToSort = arr;
     int[] workSpace = new int[arr.length];
     reqMergeSort(workSpace, 0, arr.length - 1);
     return arrToSort;
+    }else{
+      return arr;
+    }
   }
 
   /**

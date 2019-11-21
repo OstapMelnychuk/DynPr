@@ -1,8 +1,6 @@
 package com.company.sort.factory;
 
-import com.company.sort.CountingSort;
-import com.company.sort.InsertionSort;
-import com.company.sort.Sort;
+import com.company.sort.*;
 
 /**
  * Class for working with all sorting classes.
@@ -17,13 +15,22 @@ public class SortFactory {
    */
   public Sort getSort(String sortType) {
 
+    sortType = sortType.toLowerCase();
+
     switch (sortType) {
-      case "Insertion sort":
+      case "insertion sort":
         return new InsertionSort();
-      case "Counting sort":
+      case "counting sort":
         return new CountingSort();
+      case "quick sort":
+        return new QuickSort();
+      case "merge sort":
+        return new MergeSort();
+      case "bucket sort":
+        return new BucketSort();
+
       default:
-        System.out.println("Not found task");
+        System.out.println("Not found type of sort");
         return null;
     }
 

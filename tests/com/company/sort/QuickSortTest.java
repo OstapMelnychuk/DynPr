@@ -24,7 +24,10 @@ public class QuickSortTest {
     int[] emptyArr = {};
 
 
-    QuickSort.sort(arr);
+    QuickSort quickSort = new QuickSort();
+
+    quickSort.sort(arr);
+
     Assert.assertArrayEquals(expectedArr, arr);
     Assert.assertArrayEquals(emptyArr, emptyArr);
   }

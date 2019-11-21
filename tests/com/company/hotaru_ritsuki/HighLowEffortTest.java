@@ -4,10 +4,11 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-class HighLowEffortTest {
+
+public class HighLowEffortTest {
 
   @Test
-  void max() {
+  public void max() {
     int x = 4;
     int y = 5;
     int expected = 5;
@@ -16,7 +17,7 @@ class HighLowEffortTest {
   }
 
   @Test
-  void maxEqual() {
+  public void maxEqual() {
     int x = 0;
     int y = 0;
     int expected = 0;
@@ -25,7 +26,7 @@ class HighLowEffortTest {
   }
 
   @Test
-  void maxTasks() {
+  public void maxTasks() {
     int n = 5;
     int[] low = new int[]{1, 5, 4, 5, 3};
     int[] high = new int[]{3, 6, 8, 7, 6};
@@ -36,7 +37,7 @@ class HighLowEffortTest {
   }
 
   @Test
-  void maxTasksNEqualsOne() {
+  public void maxTasksNEqualsOne() {
     int n = 1;
     int[] low = new int[]{1, 5, 4, 5, 3};
     int[] high = new int[]{3, 6, 8, 7, 6};
@@ -47,7 +48,7 @@ class HighLowEffortTest {
   }
 
   @Test
-  void maxTasksNEqualsZero() {
+  public void maxTasksNEqualsZero() {
     int n = 0;
     int[] low = new int[]{1, 5, 4, 5, 3};
     int[] high = new int[]{3, 6, 8, 7, 6};
@@ -58,7 +59,7 @@ class HighLowEffortTest {
   }
 
   @Test
-  void maxTasksNLoverThanZero() {
+  public void maxTasksNLoverThanZero() {
     int n = -20;
     int[] low = new int[]{2, 5, 4, 5, 3};
     int[] high = new int[]{3, 6, 8, 7, 6};
@@ -67,4 +68,8 @@ class HighLowEffortTest {
     int actual = HighLowEffort.maxTasks(high, low, n);
     assertEquals(expected, actual);
   }
+
+
 }
+
+
