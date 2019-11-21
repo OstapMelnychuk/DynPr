@@ -1,13 +1,13 @@
 package com.company.hotaru_ritsuki;
 
-import com.company.hotaru_ritsuki.ModifiedFibonacci;
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-class ModifiedFibonacciTest {
+import static org.junit.Assert.assertEquals;
+
+public class ModifiedFibonacciTest {
   @Test
-  void getFibonacciNumberBottomUpWithCache() {
+  public void getFibonacciNumberBottomUpWithCache() {
     int n = 6;
     int actual = ModifiedFibonacci.getFibonacciNumberBottomUpWithCache(n);
     int expected = 4;
@@ -15,7 +15,7 @@ class ModifiedFibonacciTest {
   }
 
   @Test
-  void getFibonacciNumberBottomUpWithCacheNIsZero() {
+  public void getFibonacciNumberBottomUpWithCacheNIsZero() {
     try {
       int n = 0;
       int actual = ModifiedFibonacci.getFibonacciNumberBottomUpWithCache(n);
@@ -27,7 +27,7 @@ class ModifiedFibonacciTest {
   }
 
   @Test
-  void getFibonacciNumberBottomUpWithCacheNIsOne() {
+  public void getFibonacciNumberBottomUpWithCacheNIsOne() {
     int n = 1;
     int actual = ModifiedFibonacci.getFibonacciNumberBottomUpWithCache(n);
     int expected = 1;
@@ -35,7 +35,7 @@ class ModifiedFibonacciTest {
   }
 
   @Test
-  void getFibonacciNumberBottomUpWithCacheNIsTwo() {
+  public void getFibonacciNumberBottomUpWithCacheNIsTwo() {
     int n = 2;
     int actual = ModifiedFibonacci.getFibonacciNumberBottomUpWithCache(n);
     int expected = 1;

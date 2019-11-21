@@ -36,7 +36,8 @@ public class BucketSortTest extends Assert {
     for(int []i : arrTest) {
       System.out.println(Arrays.toString(i));
       int []temp = i.clone();
-      BucketSort.bucketSort(temp,max(temp));
+      BucketSort bSort = new BucketSort();
+      bSort.sort(temp);
       System.out.print(Arrays.toString(temp)+"      ");
       Arrays.sort(i);
       System.out.print("    "+Arrays.toString(i)+"\n");
