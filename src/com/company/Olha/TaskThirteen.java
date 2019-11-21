@@ -23,14 +23,6 @@ public class TaskThirteen {
 
     if (n == 0) {
       return 0;
-      /**
-       * Returns count of ways to color n posts using k colors
-       *
-       * @param n number of plots
-       * @param k number of colors
-       * @return number of ways of painting the fence such,
-       * that at most 2 adjacent posts have the same color.
-       */
     }
     if (n == 1) {
       return k;
