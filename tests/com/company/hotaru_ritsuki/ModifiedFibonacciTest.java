@@ -15,7 +15,7 @@ public class ModifiedFibonacciTest {
   }
 
   @Test
-  void getFibonacciNumberBottomUpWithCacheNIsZero() {
+  public void getFibonacciNumberBottomUpWithCacheNIsZero() {
     try {
       int n = 0;
       int actual = ModifiedFibonacci.getFibonacciNumberBottomUpWithCache(n);
@@ -27,7 +27,7 @@ public class ModifiedFibonacciTest {
   }
 
   @Test
-  void getFibonacciNumberBottomUpWithCacheNIsOne() {
+  public void getFibonacciNumberBottomUpWithCacheNIsOne() {
     int n = 1;
     int actual = ModifiedFibonacci.getFibonacciNumberBottomUpWithCache(n);
     int expected = 1;
@@ -35,7 +35,7 @@ public class ModifiedFibonacciTest {
   }
 
   @Test
-  void getFibonacciNumberBottomUpWithCacheNIsTwo() {
+  public void getFibonacciNumberBottomUpWithCacheNIsTwo() {
     int n = 2;
     int actual = ModifiedFibonacci.getFibonacciNumberBottomUpWithCache(n);
     int expected = 1;
