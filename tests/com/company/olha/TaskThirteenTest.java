@@ -1,4 +1,4 @@
-package com.company.Olha.Tests;
+package com.company.olha;
 import com.company.Olha.TaskThirteen;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;

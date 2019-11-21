@@ -1,17 +1,18 @@
 package com.company.sort;
+
 /**
- *
  * This class use to sort integer array by insertion sort.
  *
- * @author      Oleksiy Radyuk
- * @version     1.0
- * @since       2019-11-18
+ * @author Oleksiy Radyuk
+ * @version 1.0
+ * @since 2019-11-18
  */
 
-public class InsertionSort  implements Sort{
+public class InsertionSort implements Sort {
 
   /**
    * Sorting array.
+   *
    * @param arr which need to be sorted.
    * @return sorted array.
    */
@@ -30,8 +31,7 @@ public class InsertionSort  implements Sort{
         arr[j + 1] = key;
       }
       return arr;
-    }
-    else {
+    } else {
       return arr;
     }
   }

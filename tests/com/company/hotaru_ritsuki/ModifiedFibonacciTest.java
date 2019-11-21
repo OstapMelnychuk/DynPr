@@ -1,9 +1,9 @@
 package com.company.hotaru_ritsuki;
 
-import com.company.hotaru_ritsuki.ModifiedFibonacci;
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 class ModifiedFibonacciTest {
   @Test
