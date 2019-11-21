@@ -12,9 +12,10 @@ import com.company.misha.FriendPairs;
 import com.company.misha.LongestSubsequence;
 import com.company.pavlo.Task05;
 import com.company.pavlo.Task12;
+import com.company.sort.view.View;
 import com.company.task1task8.FibonacciNumbers;
 import com.company.task1task8.PathsWithoutCrossing;
-import com.company.sort.view.View;
+
 
 import java.util.Scanner;
 

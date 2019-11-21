@@ -41,4 +41,16 @@ class ModifiedFibonacciTest {
     int expected = 1;
     assertEquals(expected, actual);
   }
+
+//  @Test
+//  void getFibonacciNumberBottomUpWithCacheNLowerThanZero() {
+//    try {
+//      int n = -20;
+//      int actual = ModifiedFibonacci.getFibonacciNumberBottomUpWithCache(n);
+//      int expected = 0;
+//      assertEquals(expected, actual);
+//    } catch (NullPointerException e) {
+//      System.out.println("NullPointerException Catched");
+//    }
+//  }
 }
