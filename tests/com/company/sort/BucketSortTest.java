@@ -17,7 +17,7 @@ public class BucketSortTest extends Assert {
     for(int i = 0; i < 10; i++){
       int[] temp=new int[15-i];
       for(int j=0;j<15-i;j++){
-        temp[j]=rand.nextInt(65536)-32768;
+        temp[j]=rand.nextInt(9000);
       }
 
       arrTest.add(temp);

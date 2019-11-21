@@ -21,13 +21,13 @@ public class BucketSort implements Sort {
   public int[] sort(int[] array) {
     boolean negative = false;
     for (int i = 0; i < array.length; i++) {
-      if (array[i] < 0) {
+      if ((array[i] < 0) || (array.length < 2)) {
         negative = true;
       }
 
     }
     if (negative) {
-      System.out.println("Negative, we can't applie this typeof sorting for array of negative nubers.");
+      System.out.println("Negative, we can't apply this type of sorting for array of negative nubers orray with less than 2 elements.");
       return array;
     } else {
       int maxVal = 0;
