@@ -15,16 +15,12 @@ import java.util.Scanner;
  */
 public class View {
   /**
-   * The array saves the numbers to be sorted.
-   */
-  private static int[] mas;
-
-  /**
    * The method implements the menu logic.
    */
   public static void start() {
     String interactionin = "YES";
-
+    int[] mas;
+    
     SortFactory sortFactory = new SortFactory();
 
     Scanner scanner = new Scanner(System.in);
