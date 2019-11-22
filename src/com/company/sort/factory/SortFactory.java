@@ -15,9 +15,7 @@ public class SortFactory {
    */
   public Sort getSort(String sortType) {
 
-    sortType = sortType.toLowerCase();
-
-    switch (sortType) {
+    switch (sortType.toLowerCase()) {
       case "insertion sort":
         return new InsertionSort();
       case "counting sort":
